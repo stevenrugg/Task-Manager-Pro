@@ -1,12 +1,15 @@
 {
   "name": "task-manager-pro",
-  "private": true,
-  "version": "0.0.0",
+  "homepage": "https://stevenrugg.github.io/Task-Manager-Pro"
+  "private": false,
+  "version": "1.2.2",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
+    "predeploy": "npm run build"
+    "deploy": "gh-pages -g build"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -22,6 +25,7 @@
     "postcss": "^8.4.27",
     "tailwindcss": "^3.3.3",
     "typescript": "^5.0.2",
-    "vite": "^4.4.5"
+    "vite": "^4.4.5",
+    "gh-pages": "^6.3.0"
   }
 }
